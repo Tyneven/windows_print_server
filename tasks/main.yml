@@ -1,0 +1,3 @@
+---
+- name: Install Print server feature
+  include: feature_installation.yml

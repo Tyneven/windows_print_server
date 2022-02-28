@@ -1,0 +1,18 @@
+---
+galaxy_info:
+  author: Judicaël LE NEVEN
+  description: Role for Microsoft Windows print server
+  license: MIT License
+
+  min_ansible_version: 2.4
+
+  platforms:
+  - name: Windows
+    versions:
+      - 2016
+
+  galaxy_tags:
+    - print
+    - windows
+
+dependencies: []

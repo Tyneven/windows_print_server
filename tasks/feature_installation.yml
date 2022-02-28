@@ -1,0 +1,12 @@
+---
+- name: Install Print server feature
+  win_feature:
+    name: Print-Server
+    state: present
+    include_management_tools: yes
+  register: reg_feature
+
+- name: Reboot Server
+  win_reboot:
+    msg: "Reboot initiated via Ansible"
+  when: reg_feature.reboot_required
